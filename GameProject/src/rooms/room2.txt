@@ -1,0 +1,21 @@
+fwa,fwa,fwa,fwa,fwa,fwa,fwa,fwa,fwa,fwa,fwa,fwa,fwa
+fwa,tfn,tfn,tfn,tfn,tfn,tfn,tfn,tfn,tfn,tfn,tfn,fwa
+fwa,tfn,tfn,tfn,tfn,tfn,tfn,tfn,tfn,tfn,tfn,tfn,fwa
+fwa,tfn,tfn,fwa,fwa,tfn,tfn,fwa,fwa,tfn,tfn,tfn,fwa
+fwa,tfn,tfn,fwa,fwa,tfn,tfn,fwa,fwa,tfn,tfn,tfn,fwa
+fwa,tfn,tfn,tfn,tfn,tfn,tfn,tfn,tfn,tfn,tfn,tfn,fwa
+fwa,ts1,tfn,tfn,tfn,tfn,tfn,tfn,tfn,tfn,tfn,tfn,fwa
+fwa,tfn,tfn,tfn,tfn,tfn,tfn,tfn,tfn,tfn,tfn,tfn,fwa
+fwa,tfn,tfn,fwa,tfn,tfn,tfn,tfn,fwa,tfn,tfn,tfn,fwa
+fwa,tfn,tfn,fwa,fwa,tfn,tfn,fwa,fwa,tfn,tfn,tfn,fwa
+fwa,tfn,tfn,tfn,fwa,fwa,fwa,fwa,tfn,tfn,tfn,tfn,fwa
+fwa,tfn,tfn,tfn,tfn,fwa,fwa,tfn,tfn,tfn,tfn,tfn,fwa
+fwa,tfn,tfn,tfn,tfn,tfn,tfn,tfn,tfn,tfn,tfn,tfn,fwa
+fwa,fwa,fwa,fwa,fwa,fwa,fwa,fwa,fwa,fwa,fwa,fwa,fwa
+sConnection
+ss1:room1:s2:2
+sSpecific
+sfalse
+s6:3,Item,Crystal,A Crystal that can unlock stair cases,true
+s6:3,Item,Crystal,A Crystal that can unlock stair cases,true
+s6:3,Item,Crystal,A Crystal that can unlock stair cases,true

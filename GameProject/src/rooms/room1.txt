@@ -1,0 +1,47 @@
+nul,nul,fwa,fwa,fwa,fwa,fwa,fwa,fwa,fwa,fwa,fwa,fwa,fwa
+nul,nul,fwa,tfn,tfn,tfn,tfn,tfn,ts2,tfn,tfn,tfn,tfn,fwa
+nul,nul,fwa,tfn,tfn,tfn,tfn,tfn,tfn,tfn,tfn,tfn,tfn,fwa
+nul,nul,fwa,tfn,tfn,tfn,tfn,tfn,tfn,tfn,tfn,tfn,tfn,fwa
+nul,nul,fwa,tfn,tfn,tfn,tfn,tfn,tfn,tfn,tfn,tfn,tfn,fwa
+nul,nul,fwa,tfn,tfn,tfn,tfn,tfn,tfn,tfn,tfn,tfn,tfn,fwa
+nul,nul,fwa,tfn,tfn,tfn,tfn,tfn,tfn,tfn,tfn,tfn,tfn,fwa
+nul,nul,fwa,tfn,tfn,tfn,tfn,tfn,tfn,tfn,tfn,tfn,tfn,fwa
+nul,nul,fwa,tfn,tfn,tfn,tfn,tfn,tfn,tfn,tfn,tfn,tfn,fwa
+nul,nul,fwa,tfn,tfn,tfn,tfn,tfn,tfn,tfn,tfn,tfn,tfn,fwa
+nul,nul,fwa,tfn,tfn,tfn,tfn,tfn,tfn,tfn,tfn,tfn,tfn,fwa
+nul,nul,fwa,fwa,fwa,fwa,fwa,fwa,tfn,tfn,fwa,fwa,fwa,fwa
+fwa,fwa,fwa,fwa,fwa,tfn,tfn,tfn,tfn,tfn,tfn,tfn,tfn,fwa
+fwa,tfn,tfn,tfn,tfn,tfn,tfn,tfn,tfn,tfn,tfn,tfn,tfn,fwa
+fwa,tfn,tfn,tfn,tfn,tfn,tfn,tfn,tfn,tfn,tfn,tfn,tfn,fwa
+fwa,tfn,tfn,tfn,tfn,tfn,tfn,tfn,tfn,tfn,tfn,tfn,tfn,fwa
+fwa,fwa,fwa,fwa,fwa,tfn,tfn,tfn,tfn,tfn,tfn,tfn,tfn,fwa
+nul,nul,nul,nul,fwa,tfn,tfn,fwa,fwa,fwa,fwa,fwa,tfn,fwa
+nul,nul,nul,nul,fwa,tfn,tfn,fwa,nul,nul,nul,fwa,tfn,fwa
+nul,nul,nul,nul,fwa,tfn,tfn,fwa,nul,nul,nul,fwa,tfn,fwa
+nul,nul,nul,nul,fwa,tfn,tfn,fwa,nul,nul,nul,fwa,fwa,fwa
+nul,nul,nul,nul,fwa,tfn,tfn,fwa,nul,nul,nul,nul,nul,nul
+nul,nul,nul,nul,fwa,tfn,tfn,fwa,nul,nul,nul,nul,nul,nul
+nul,nul,nul,nul,fwa,tfn,tfn,fwa,nul,nul,nul,nul,nul,nul
+fwa,fwa,fwa,fwa,fwa,tfn,tfn,fwa,nul,nul,nul,nul,nul,nul
+fwa,tfn,tfn,tfn,tfn,tfn,tfn,fwa,nul,nul,nul,nul,nul,nul
+fwa,tfn,tfn,tfn,tfn,tfn,tfn,fwa,nul,nul,nul,nul,nul,nul
+fwa,ts1,tfn,tfn,tfn,tfn,tfn,fwa,nul,nul,nul,nul,nul,nul
+fwa,tfn,tfn,tfn,tfn,tfn,tfn,fwa,nul,nul,nul,nul,nul,nul
+fwa,tfn,tfn,tfn,tfn,tfn,tfn,fwa,nul,nul,nul,nul,nul,nul
+fwa,fwa,fwa,fwa,fwa,fwa,fwa,fwa,fwa,fwa,fwa,fwa,fwa,fwa
+sConnection
+ss1:room0:s1:1
+ss2:room2:s1:2
+sSpecific
+strue
+sObjects
+s8:1,StairBlock,StairBlock,A device built to block stairs...weird,3
+s5:14,,Ornament,An unlit stone brazier
+s7:14,,Ornament,An unlit stone brazier
+s6:4,,Ornament,An unlit stone brazier
+s9:4,,Ornament,An unlit stone brazier
+s6:7,,Ornament,An unlit stone brazier
+s9:7,,Ornament,An unlit stone brazier
+s5:27,Item,Crystal,A Crystal that can unlock stair cases,true
+s1:14,Item,Crystal,A Crystal that can unlock stair cases,true
+s12:19,Item,Crystal,A Crystal that can unlock stair cases,true

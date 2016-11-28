@@ -1,0 +1,24 @@
+fwa,fwa,fwa,fwa,fwa,fwa,fwa,fwa,fwa,fwa,fwa,fwa,fwa
+fwa,tfn,tfn,tfn,tfn,tfn,ts1,tfn,tfn,tfn,tfn,tfn,fwa
+fwa,tfn,tfn,fwa,tfn,tfn,tfn,tfn,tfn,fwa,tfn,tfn,fwa
+fwa,tfn,tfn,fwa,tfn,tfn,tfn,tfn,tfn,fwa,tfn,tfn,fwa
+fwa,tfn,tfn,fwa,tfn,tfn,tfn,tfn,tfn,fwa,tfn,tfn,fwa
+fwa,tfn,tfn,fwa,tfn,tfn,tfn,tfn,tfn,fwa,tfn,tfn,fwa
+fwa,tfn,tfn,fwa,tfn,tfn,tfn,tfn,tfn,fwa,tfn,tfn,fwa
+fwa,tfn,tfn,tfn,tfn,tfn,tfn,tfn,tfn,tfn,tfn,tfn,fwa
+fwa,tfn,tfn,tfn,tfn,tfn,tfn,tfn,tfn,tfn,tfn,tfn,fwa
+fwa,tfn,tfn,tfn,tfn,tfn,tfn,tfn,tfn,tfn,tfn,tfn,fwa
+fwa,tfn,tfn,tfn,tfn,tfn,tfn,tfn,tfn,tfn,tfn,tfn,fwa
+fwa,fwa,fwa,fwa,fwa,fwa,fwa,fwa,fwa,fwa,fwa,fwa,fwa
+sConnection
+ss1:room1:s1:1
+sSpecific
+sfalse
+sObjects
+s6:1,StairBlock,StairBlock,A device built to block stairs...weird,1
+s4:5,Item,FlashLight,A light to light up dark places,true
+s8:5,Item,FlashLight,A light to light up dark places,true
+s1:6,,Ornament,An unlit stone brazier
+s11:6,,Ornament,An unlit stone brazier
+s6:10,Item,Crystal,A Crystal that can unlock stair cases,true
+s6:2,Sign,Sign Post,A sign post with useful information,Helpful hints! Crystals open trap doors and press R to rotate! Ps... GRAB THE FLASHLIGHT
