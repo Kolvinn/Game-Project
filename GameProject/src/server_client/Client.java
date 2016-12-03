@@ -58,6 +58,7 @@ public class Client extends Thread{
 	private ClientRoom room;
 	private Renderer renderer;
 	private GameWindow frame;
+	int timerStart =0;
 
 
 	/**
@@ -69,7 +70,7 @@ public class Client extends Thread{
 		this.frame=frame;
 
 		this.room = new ClientRoom(this);//create an empty room to be updated when we receive input
-
+		timerStart = (int) System.currentTimeMillis();
 		try {
 			//create the input and output object streams
 			output = new DataOutputStream(socket.getOutputStream());
@@ -83,11 +84,18 @@ public class Client extends Thread{
 
 	@Override
 	public void run(){
+		System.out.println("SDHSDKLNSLDKN");
+		int total=0;
 		try {
 			boolean exit = false;
 			while(!exit){//loop as long as the client is running
 				//this.room = server.getRoom(uid);
+				
 				try {
+					total++;
+					if(System.currentTimeMillis() - timerStart==10)
+						System.out.println(total);
+					
 					if(input.available()!=0){   //if the server sends anything
 						processInput();
 					}
