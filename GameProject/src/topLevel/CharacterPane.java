@@ -1,32 +1,10 @@
 package topLevel;
 
-import java.awt.BorderLayout;
-import java.awt.Color;
-import java.awt.Font;
+
 import java.awt.Graphics;
-import java.awt.GridLayout;
-import java.awt.Image;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.awt.event.MouseAdapter;
-import java.awt.event.MouseEvent;
-import java.io.File;
-import java.io.IOException;
 
-import javax.imageio.ImageIO;
-import javax.swing.AbstractAction;
-import javax.swing.JButton;
-import javax.swing.JFrame;
-import javax.swing.JLayeredPane;
-import javax.swing.JOptionPane;
-import javax.swing.JPanel;
-import javax.swing.JTextArea;
 import javax.swing.JTextField;
-import javax.swing.KeyStroke;
-
-import GUI.UserInputPanel;
-import server_client.Main;
-import server_client.Control.View;
+import topLevel.GameWindow.View;
 
 /**\
  * This class is a subclass of JPanel that will show up on the screen when the user selects new game
@@ -38,18 +16,22 @@ import server_client.Control.View;
  */
 
 
-public class CharacterPanel extends LayeredPane{
+public class CharacterPane extends LayeredPane{
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
 	private JTextField text = new JTextField();	
 	
 	private String characterName;
 
-	//private JTextField text = new JTextField();
-	private Window window;
+
 	private boolean isError = false;
 	private ImagePanel but;
 	
-	public CharacterPanel(Window window){
-		this.window= window;
+	public CharacterPane(GameWindow window){
+		super(window);
 		this.setSize(width, height);		
 		this.setLayout(null);
 		

@@ -2,6 +2,7 @@ package game;
 
 import java.awt.Point;
 import java.io.Serializable;
+import java.util.Collection;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
@@ -115,6 +116,9 @@ public class Room implements Serializable{
 		worldObjects.remove(point, player);
 
 	}
+	public Collection<WorldObject> getWorldObjects(){
+		return worldObjects.values();
+	}
 
 	/**
 	 * returns the map from Point to world object that this room maintains
@@ -155,11 +159,9 @@ public class Room implements Serializable{
 	 * @return
 	 */
 	public Player getPlayer(){
-		for(Tile[] tiles: tiles){
-			for(Tile tile: tiles){
-				if(tile.getObject() instanceof Player)
-					return (Player) tile.getObject();
-			}
+		for(WorldObject ob :getWorldObjects()){
+			if(ob.name.equals("bob"))
+					return (Player) ob;
 		}
 		return null;
 	}

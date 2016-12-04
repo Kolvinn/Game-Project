@@ -73,8 +73,9 @@ public class GameRunner {
 		player.setPoint(point);
 
 		room.setWorldObject(point, player);
+		
 		getPlayersInRoom(room).add(player);
-
+		System.out.println();
 		return player;
 	}
 

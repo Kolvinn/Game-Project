@@ -8,10 +8,14 @@ import javax.imageio.ImageIO;
 import javax.swing.JLayeredPane;
 
 public abstract class LayeredPane extends JLayeredPane {
+
+	private static final long serialVersionUID = 1L;
 	protected Image background, button;
 	protected static int width = 1200, height =1000, btnWidth = 180, btnHeight=70, btnDist=20;
-	
-	
+	protected GameWindow window ;
+	public LayeredPane(GameWindow window){
+		this.window=window;
+	}
 	public void update(String s){
 		
 	}

@@ -17,19 +17,20 @@ import javax.swing.JLabel;
 import javax.swing.JLayeredPane;
 import javax.swing.JOptionPane;
 
-import server_client.Control.View;
+import topLevel.GameWindow.View;
 
-public class MenuPanel extends LayeredPane {
+
+public class MenuPane extends LayeredPane {
 	
 	private static String[] main = {"New Game","Load Game","Options","Quit"}, 
 			newGame = {"Classic","Speed Run","Death March"},
 			options = {"Audio", "Controls"},
 			loadGame = {"NO GAMES NIGASS"},
 			previous, current;
-	private Window window;
+
 	
-	public MenuPanel(Window window){
-		this.window=window;
+	public MenuPane(GameWindow window){
+		super(window);
 		this.setSize(width, height);
 		this.setLayout(null);
 		readImages();

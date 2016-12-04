@@ -19,9 +19,11 @@ import javax.imageio.ImageIO;
 import javax.swing.JPanel;
 
 import game.ClientRoom;
+import game.GameRunner;
 import game.Player;
 import game.Tile;
 import game.WorldObject;
+import topLevel.LayeredPane;
 import game.Player.Direction;
 import game.Room;
 
@@ -35,7 +37,7 @@ import game.Room;
  * @author zhengzhon
  *
  */
-public class RendererRemade extends JPanel {
+public class RenderPanel extends JPanel {
 
 	private static final long serialVersionUID = 1L;
 
@@ -81,13 +83,19 @@ public class RendererRemade extends JPanel {
 	 *
 	 * @param map
 	 */
-	public RendererRemade(Room map) {
-		this.map = map;
+	public RenderPanel() {
+		this.setSize(1000,1000);
+		this.setVisible(true);
+		//TODO CHANGE PLAYER CREATION
+		GameRunner game = new GameRunner();
+		Player player = game.createPlayer("bob","Mr Hero Pants");
+		this.map = game.getPlayerRoom(player);
 		this.perspective = Rotation.NORTH;
 
 		loadupSprites();
-		this.currentPlayer = map.getPlayer();
-
+		System.out.println("in the rendererRemade contrustor   \n"+ map.getMap());
+		this.currentPlayer = player;
+		//this.repaint();
 		//this.playerPointX = currentPlayer.getPoint().x;
 		//this.playerPointY = currentPlayer.getPoint().y;
 	}
@@ -247,6 +255,7 @@ public class RendererRemade extends JPanel {
 
 		// code to determine which player sprite to use
 		Direction lastDirection = player.getDirectionSet().lastDirection();
+		System.out.println(lastDirection);
 		switch (lastDirection) {
 		case North:
 			player.setNorth(true);
@@ -311,7 +320,7 @@ public class RendererRemade extends JPanel {
 			break;
 		}
 
-		BufferedImage image = playerSprites.get("Player" + player.getPlayerIndex() + vertical + horizontal);
+		BufferedImage image = playerSprites.get("Player" + "1" + vertical + horizontal);
 
 		if(image != null)
 			return image;
@@ -336,7 +345,7 @@ public class RendererRemade extends JPanel {
 
 	}
 
-	public void paint(Graphics g) {
+	public void paintComponent(Graphics g) {
 
 		System.out.println("SDKNSDLNSLKDNLSDNLSNDLKSNDLKNSDLKNSLDNLSND");
 
@@ -357,13 +366,19 @@ public class RendererRemade extends JPanel {
 			tiles = map.getTiles();
 
 			// Gets the player's current position as a point of focus
-
+			System.out.println(currentPlayer.getPoint());
 			playerX = currentPlayer.getPoint().x;
 			playerY = currentPlayer.getPoint().y;
 
 
 
 			// Get/update the tiles array to render
+			//for(Tile[] tiles: map.getTiles()){
+				//for(Tile t: tiles){
+				//	System.out.print(t.getObject());
+				//}
+				//System.out.println();
+			//}
 			tiles = map.getTiles();
 
 
@@ -429,16 +444,16 @@ public class RendererRemade extends JPanel {
 					if (t.toString().equals("wa")) {
 						isWall = true;
 					}
-
-					// If an object is occupying the current tile
-					if (t.getObject() != null) {
-						if(t.getObject() instanceof Player){
-							objectImage = getPlayer((Player) t.getObject());
+					WorldObject object = map.getWorldObject(new Point(x,y));
+					if(object!=null){
+						System.out.println(object);
+						if(object instanceof Player){
+							objectImage = getPlayer((Player) object);
 						}
 						else
-							objectImage = getItem(t.getObject().toString());
+							objectImage = getItem(object.toString());
 					}
-
+					//t.getObject()
 					yPos = tileY * tileHeight;
 					xPos = tileX * tileWidth;
 					int imageHeight = tileHeight;
@@ -463,8 +478,8 @@ public class RendererRemade extends JPanel {
 						String itemDescription = "No description available";
 
 						// Add the tile to a map of tile coordinates to tile/item description
-						itemName = t.getObject().toString();
-						itemDescription = t.getObject().getDescription();
+						itemName = object.toString();
+						itemDescription = object.getDescription();
 
 						String[] temp = new String[2];
 						temp[0] = itemName;
