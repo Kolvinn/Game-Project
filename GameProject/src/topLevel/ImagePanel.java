@@ -19,10 +19,21 @@ public class ImagePanel extends JPanel implements MouseListener{
 	private Image background;
 	private String name;
 	private LayeredPane menuPanel;
+	/**
+	 * Constructor for background
+	 * @param background
+	 * @param menuPanel
+	 */
 	public ImagePanel(Image background, LayeredPane menuPanel){
 		this.menuPanel=menuPanel;
 		this.background=background;
 	}
+	/**
+	 * Constructor used for creating buttons
+	 * @param name
+	 * @param background
+	 * @param menuPanel
+	 */
 	public ImagePanel(String name, Image background,LayeredPane menuPanel){
 		this.menuPanel=menuPanel;
 		this.background=background;
@@ -47,7 +58,7 @@ public class ImagePanel extends JPanel implements MouseListener{
 	}
 	@Override
 	public void mouseClicked(MouseEvent e) {
-		System.out.println("Click");
+		//System.out.println("Click");
 		if(name!=null)
 			menuPanel.update(name);
 		

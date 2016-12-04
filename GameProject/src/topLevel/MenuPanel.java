@@ -127,7 +127,6 @@ public class MenuPanel extends LayeredPane {
 
 		int y = determineBtnY(buttons.length);
 		for(String s:buttons){	
-			System.out.println("SDSD");
 			panel = new ImagePanel(s,button, this);
 			panel.setBounds(400, y, 380, btnHeight);
 			this.add(panel, PALETTE_LAYER);

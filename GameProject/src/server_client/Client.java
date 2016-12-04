@@ -84,7 +84,7 @@ public class Client extends Thread{
 
 	@Override
 	public void run(){
-		System.out.println("SDHSDKLNSLDKN");
+		
 		int total=0;
 		try {
 			boolean exit = false;
@@ -93,9 +93,8 @@ public class Client extends Thread{
 				
 				try {
 					total++;
-					if(System.currentTimeMillis() - timerStart==10)
-						System.out.println(total);
 					
+
 					if(input.available()!=0){   //if the server sends anything
 						processInput();
 					}

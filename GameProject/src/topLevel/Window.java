@@ -19,6 +19,7 @@ import javax.swing.JLabel;
 import javax.swing.JLayeredPane;
 import javax.swing.SwingConstants;
 
+import render.Renderer;
 import server_client.Control;
 import server_client.Control.View;
 
@@ -53,13 +54,14 @@ public class Window extends JFrame {
 	public void run(View view){
 		//TODO need to remove all without breaking it
 		if(controlPane.getComponentCount()!=0)
-			controlPane.remove(0);
+			remove();
 		
 		switch(view){	
 		case CHARACTER:				
-			controlPane.add(new CharacterPanel(this), JLayeredPane.PALETTE_LAYER);
+			controlPane.add(new CharacterPanel(this), JLayeredPane.DEFAULT_LAYER);
 			break;
 		case GAME:
+			//controlPane.add(new Renderer(), JLayeredPane.PALETTE_LAYER);
 			break;
 		case MENU:
 			controlPane.add(new MenuPanel(this),JLayeredPane.DEFAULT_LAYER);
@@ -70,8 +72,13 @@ public class Window extends JFrame {
 			
 		}
 	}
+	public JLayeredPane getPane(){
+		return controlPane;
+	}
 	
-
+	public void remove(){
+		controlPane.remove(0);
+	}
 	
 	public void updateView(View view){
 		controller.update(view);

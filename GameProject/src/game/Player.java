@@ -33,10 +33,9 @@ public class Player extends Storage implements Serializable{
 	 * @param storageLimit
 	 * @param number
 	 */
-	public Player(String name, String description, int storageLimit, int number) {
+	public Player(String name, String description, int storageLimit) {
 		super(name, description, storageLimit);
 		directionSet=new DirectionSet();
-		this.playerIndex = number;
 	}
 	/**
 	 * Returns the direction set for this player which contains all direction information relative to how

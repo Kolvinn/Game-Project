@@ -68,7 +68,8 @@ public class GameRunner {
 
 		Room room = roomNames.get("room0");//get room 0
 		Point point = getSpawnPoint(room);//get a spawn point
-		Player player = new Player(name,description, PlayerStorage,Integer.parseInt(name.substring(6)));
+		System.out.println(name+"   "+description+"    "+PlayerStorage+"    ");
+		Player player = new Player(name,description, PlayerStorage);
 		player.setPoint(point);
 
 		room.setWorldObject(point, player);

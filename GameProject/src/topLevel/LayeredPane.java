@@ -33,7 +33,7 @@ public abstract class LayeredPane extends JLayeredPane {
 		//create the background
 		ImagePanel p = new ImagePanel(background,this);
 		p.setBounds(0, 0, width,height);
-		System.out.println("setting background");
+		//System.out.println("setting background");
 		this.add(p,DEFAULT_LAYER);
 	}
 }
